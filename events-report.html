@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Event Reporting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav"> 
+        <nav>
+            <ul>
+                <li><a href="driver.html">Home</a></li>
+                <li><a href="driver-update.html">Driver Update</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="events-report.html">Events Report</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <h1>Report an Event</h1>
+        <form action="/submit-event-report" method="POST" class="form-style">
+            <div class="input-group">
+                <label for="mission-id">Mission ID:</label>
+                <input type="text" id="mission-id" name="missionId" required>
+            </div>
+            <div class="input-group">
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="eventType">
+                    <option value="accident">Accident</option>
+                    <option value="breakdown">Breakdown</option>
+                    <option value="delay">Delay</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="eventDescription" required></textarea>
+            </div>
+            <div class="input-group">
+                <button type="submit">Submit Report</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
