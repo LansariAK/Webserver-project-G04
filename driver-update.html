@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Information</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body >
+    <div class="nav"> 
+        <nav>
+            <ul>
+                <li><a href="driver.html">Home</a></li>
+                <li><a href="driver-update.html">Driver Update</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="events-report.html">Events Report</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+        <form action="/update-driver-info" method="POST" class="form-style">
+            <h2>Update Your Information</h2>
+            <div class="input-group">
+                <label for="driver-id">Driver ID:</label>
+                <input type="text" id="driver-id" name="driverId" required>
+            </div>
+            <div class="input-group">
+                <label for="driver-name">Driver's Full Name:</label>
+                <input type="text" id="driver-name" name="driverName">
+            </div>
+            <div class="input-group">
+                <label for="license-type">license type :</label>
+                <select name="license" id="license">
+                 <option value="DEFAULT"></option>
+                 <option value="B">B</option>
+                 <option value="C1">C1</option>
+                 <option value="C2">C2</option>
+                 <option value="C3">C3</option>
+                 <option value="E">E</option>
+                 <option value="F">F</option>
+                 <option value="E">G</option>
+
+             </select>
+         </div>
+         <div class="input-group">
+            <label for="license-number">License Number:</label>
+            <input type="text" id="license-number" name="licenseNumber">
+        </div>
+        <div class="input-group">
+            <label for="vehicle-assigned">Vehicle Assigned:</label>
+            <input type="text" id="vehicle-assigned" name="vehicleAssigned">
+        </div>
+        <div class="input-group">
+            <label for="driver-status">Driver Status (Active/Inactive):</label>
+            <select id="driver-status" name="driverStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <button type="submit">Update Information</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

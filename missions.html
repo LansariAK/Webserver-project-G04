@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Missions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav"> 
+        <nav>
+            <ul>
+                <li><a href="driver.html">Home</a></li>
+                <li><a href="driver-update.html">Driver Update</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="events-report.html">Events Report</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    
+    <div class="container">
+        <h1>Mission Assignments</h1>
+        <div id="missions-list" class="missions-container">
+            <!-- Mission items will be populated here dynamically -->
+            <div class="mission-item">
+                <h2>Mission #1: Deliver Goods to Location X</h2>
+                <p>Status: <strong>In Progress</strong></p>
+                <button onclick="updateMissionStatus('Mission #1')">Update Status</button>
+            </div>
+        </div>
+  
+    <script>
+        function updateMissionStatus(missionName) {
+            // Placeholder for updating mission status
+            alert("Update status for " + missionName);
+        }
+    </script>
+</body>
+</html>
+
