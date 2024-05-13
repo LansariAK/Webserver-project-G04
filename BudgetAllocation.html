@@ -5,63 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Allocation Interface</title>
 </head>
-<style >
-      body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h2 {
-            margin-top: 0;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            float: left;
-        }
-
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav li a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
-    
-</head>
 <body>
-    <div class="nav">
-
-        <nav>
-            <ul>
-                <li><a href="FinanaceAdminDashboard.html">Home</a></li>
-                <li><a href="BudgetAllocation.html">Allocate a budget to a mission</a></li>
-                <li><a href="VehExpensesManag.html">Manage vehicule expenses</a></li>
-                <li><a href="FinancialReport.html">Generate a report</a></li>
-            </ul>
-        </nav>
-    </div>
-    <fieldset>
-
     <h1>Budget Allocation for Missions and Expenses</h1>
-    <form>
+    <form method="post" action="BudgetAllocation.php">
         <label for="mission">Mission Budget:</label>
         <input type="number" id="mission" name="mission" min="1"><br><br>
         
@@ -70,7 +16,5 @@
         
         <button type="submit">Allocate Budget</button>
     </form>
-     </fieldset>
-
 </body>
 </html>
