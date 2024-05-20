@@ -1,0 +1,58 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        fieldset {
+            border: none;
+            padding: 10px;
+            margin: 0 auto;
+            width: 80%;
+        }
+        legend {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .tile {
+            width: calc(30% - 10px);
+            background: #f4f4f4;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor:pointer;
+            position: relative;
+            text-align: left;
+        }
+        .tilelegend {
+            width: calc(100% - 10px);
+            background: #d8d8d8;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+        }
+        .tile:hover {
+            background: #e0e0e0;
+        }
+        .sub-tile {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            margin: 5px auto;
+            display: block;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        
+   
