@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/dashboards.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <title>Budget Allocation Interface</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="FinanaceAdminDashboard.php">Home</a></li>
+            <li><a href="BudgetAllocation.html">Allocate a Budget to a Mission</a></li>
+            <li><a href="VehExpensesManag.html">Manage Vehicle Expenses</a></li>
+            <li><a href="FinancialReport.html">Generate a Report</a></li>
+            <li class="logout"><a href="/disconnect.php">Logout</a></li>
+        </ul>
+    </nav>
+ 
+     <h1>Financial Report Generation Interface</h1>
+     <form action="FinancialReportv2.php" method="post">
+         <label for="report-type">Select Report Type:</label>
+         <select name="report-type" id="report-type">
+             <option value="income-statement">Income Statement</option>
+             <option value="balance-sheet">Balance Sheet</option>
+             <option value="cash-flow">Cash Flow Statement</option>
+         </select>
+         <button type="submit">Generate Report</button>
+     </form>
+  </body>
+
+</html>
