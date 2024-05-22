@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/dashboards.css">
+    <title>Budget Allocation Interface</title>
+    <link rel="stylesheet" href="../CSS/nav.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="FinanaceAdminDashboard.php">Home</a></li>
+            <li><a href="BudgetAllocation.html">Allocate a Budget to a Mission</a></li>
+            <li><a href="VehExpensesManag.html">Manage Vehicle Expenses</a></li>
+            <li><a href="FinancialReport.html">Generate a Report</a></li>
+            <li><a href="Displayreport.php">View Vehicule reports</a></li>
+            <li><a href="ManageFuelExpenses.php">View Fuel Expenses</a></li>
+            <li class="logout"><a href="/disconnect.php">Logout</a></li>
+        </ul>
+    </nav>
+
+<body>
+    <h1>Budget Allocation for Missions and Expenses</h1>
+    <form method="POST" action="BudgetAllocationv2.php">
+        <label for="mission">Mission Budget:</label>
+        <input type="number" id="mission" name="mission" min="1"><br><br>
+        
+        <label for="expenses">Expenses Budget:</label>
+        <input type="number" id="expenses" name="expenses" min="100000"><br><br>
+        
+        <button type="submit">Allocate Budget</button>
+    </form>
+</body>
+</html>
