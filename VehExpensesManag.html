@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<HTML>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Vehicle Expenses Monitoring
-    </title>
-    <body>
+    <link rel="stylesheet" href="../CSS/dashboards.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <title> Vehicle Expenses Monitoring </title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="FinanaceAdminDashboard.php">Home</a></li>
+            <li><a href="BudgetAllocation.html">Allocate a Budget to a Mission</a></li>
+            <li><a href="VehExpensesManag.html">Manage Vehicle Expenses</a></li>
+            <li><a href="FinancialReport.html">Generate a Report</a></li>
+            <li class="logout"><a href="../disconnect.php">Logout</a></li>
+        </ul>
+    </nav>
         <h1>
             Vehicle Expenses Monitoring Interface
         </h1>
-    <form method="post" action="VehExpensesManag.php">
+    <form method="post" action="VehExpensesManagv2.php">
         <label for="expenseType">Expense Type:</label>
         <input type="text" id="expenseType" name="expenseType"><br><br>
         
